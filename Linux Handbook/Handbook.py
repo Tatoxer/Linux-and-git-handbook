@@ -7,6 +7,7 @@ if section == "1":
     commands = f.read()
     f.close()
 
+
     commands = commands.split(";")
     clear_list = []
 
@@ -14,6 +15,7 @@ if section == "1":
         d = ""
         for e in i:
             if e != "\n":
+                d.lower()
                 d += e
         clear_list.append(d)
 
