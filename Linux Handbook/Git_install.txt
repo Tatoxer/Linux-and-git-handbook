@@ -1,0 +1,5 @@
+1.Установка
+
+MacOS: brew install git
+Ubuntu/Debian: sudo apt install git
+Windows: choco install git (Chocolatey либо Git for Windows, если вы не знакомы с пакетными менеджерами)
