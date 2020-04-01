@@ -21,7 +21,7 @@ def show_section(file):
         print(i + "\n")
 
 
-def read_file(file):
+def print_file(file):
     f = open(file, "r")
     commands = f.read()
     f.close()
@@ -29,7 +29,7 @@ def read_file(file):
 
 print("""1.Linux commands
 2.Git""")
-section = str(input("Choose\n"))
+section = str(input("Choose section:\n"))
 
 if section == "1":
     file = "commands.txt"
@@ -37,14 +37,19 @@ if section == "1":
     show_section(file)
 
 elif section == "2":
-    print("""1.Git install
-2.Git commands""" + "\n")
+    print("\n" + """1.Git install
+2.Git commands
+3.Git files state""" + "\n"*2)
     git_section = str(input("Choose section:\n"))
 
     if git_section == "1":
         file = "Git_install.txt"
-        read_file(file)
+        print_file(file)
 
     elif git_section == "2":
         file = "Git_commnads.txt"
         show_section(file)
+
+    elif git_section == "3":
+        file = "Git_files_state.txt"
+        print_file(file)
