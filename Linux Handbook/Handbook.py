@@ -1,4 +1,5 @@
 def show_section(file):
+    """Reading text file and sort it In alphabet order by ';' """
     f = open(file, "r")
     commands = f.read()
     f.close()
@@ -22,34 +23,51 @@ def show_section(file):
 
 
 def print_file(file):
+    """Printing text file"""
     f = open(file, "r")
     commands = f.read()
     f.close()
     print(commands)
 
-print("""1.Linux commands
+
+def check_back():
+    """Check for while loop"""
+    back = input("\nBack?(y/n)\n")
+    if back == "y":
+        return True
+    else:
+        return False
+
+
+check = True
+while check:
+    print("""1.Linux commands
 2.Git""")
-section = str(input("Choose section:\n"))
+    section = str(input("Choose section:\n"))
 
-if section == "1":
-    file = "commands.txt"
-    r = "r"
-    show_section(file)
+    if section == "1":
+        file = "../assets/commands.txt"
+        r = "r"
+        show_section(file)
+        check = check_back()
 
-elif section == "2":
-    print("\n" + """1.Git install
+    elif section == "2":
+        print("\n" + """1.Git install
 2.Git commands
 3.Git files state""" + "\n"*2)
-    git_section = str(input("Choose section:\n"))
+        git_section = str(input("Choose section:\n"))
 
-    if git_section == "1":
-        file = "Git_install.txt"
-        print_file(file)
+        if git_section == "1":
+            file = "../assets/Git_install.txt"
+            print_file(file)
+            check = check_back()
 
-    elif git_section == "2":
-        file = "Git_commnads.txt"
-        show_section(file)
+        elif git_section == "2":
+            file = "../assets/Git_commnads.txt"
+            show_section(file)
+            check = check_back()
 
-    elif git_section == "3":
-        file = "Git_files_state.txt"
-        print_file(file)
+        elif git_section == "3":
+            file = "../assets/Git_files_state.txt"
+            print_file(file)
+            check = check_back()
