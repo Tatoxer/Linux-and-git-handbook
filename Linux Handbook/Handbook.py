@@ -35,11 +35,14 @@ def print_file(file):
 
 def check_back():
     """Check for while loop"""
-    back = input("\nBack?(y/n)\n")
-    if back == "y":
-        return True
-    else:
-        return False
+    while True:
+        back = input("\nBack?(y/n)\n")
+        if back == "y":
+            return True
+        elif back != "n":
+            continue
+        else:
+            return False
 
 
 check = True
