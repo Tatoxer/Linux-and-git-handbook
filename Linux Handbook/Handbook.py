@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 def show_section(file):
     """Reading text file and sort it In alphabet order by ';' """
     f = open(file, "r")
