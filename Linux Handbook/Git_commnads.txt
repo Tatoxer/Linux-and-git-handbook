@@ -38,3 +38,7 @@ git push --set-upstream origin master - Эта команда выполняет
 git pull - получает изменения, сделанные в удалённом репозитории, а затем слитвает их со своими;
 
 git merge - обхединяет изменения меджу двумя ветвями;
+
+git remote add origin <repository url> - добавить локальный репозиторий в GitHub;
+
+git push -u origin master - отправить на GitHub;
