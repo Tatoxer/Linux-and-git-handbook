@@ -2,8 +2,8 @@
 
 #### Установка
 
-`sudo git clone https://github.com/Tatoxer/Linux-and-git-handbook.git`
+`$ sudo git clone https://github.com/Tatoxer/Linux-and-git-handbook.git`
 
-`cd /path_to_git_folder/`
+`$ cd /path_to_git_folder/`
 
-`python3 Handbook.py`
+`$ python3 Handbook.py`
