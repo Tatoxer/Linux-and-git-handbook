@@ -1,0 +1,48 @@
+УСТАНОВКА DEB ПАКЕТОВ
+
+Используя 'apt'
+$ sudo apt install ./your_app.deb
+
+
+Используя 'dpkg'
+$ sudo dpkg -i your_app.deb
+
+
+УСТАНОВКА TAR.GZ ПАКЕТОВ
+
+Если не стоит
+checkinstall
+build-essential
+autoconf automake
+
+то:
+$  sudo apt-get install checkinstall build-essential  autoconf automake
+
+Затем
+$ cd ~/путь_к_папке_с_архивом
+
+Дальше извлечем исходники из архива с программой:
+$  tar -xvf имя_архива.tar.gz
+
+И переходим в папку с только что полученными исходными файлами:
+$  cd ./имя_архива
+
+
+Configure можно создать несколькими способами, сначала попытаемся выполнить следующие скрипты:
+$ ./bootstrap
+$./autogen.sh
+
+Если же этих скриптов не оказалось в исходниках, просто последовательно выполните следующие команды:
+$ aclocal
+$ autoheader
+$ automake --gnu --add-missing --copy --foreign
+$ autoconf -f -Wall
+
+Затем
+$  make
+
+$ checkinstall
+
+И только теперь мы получили программу, которую можно устанавливать с помощью центра приложений или в терминале. Установка с помощью dpkg будет выглядеть вот так:
+
+$  dpkg -i имя_программы.deb
