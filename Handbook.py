@@ -53,7 +53,7 @@ while check:
     section = str(input("Choose section:\n"))
 
     if section == "1":
-        file = "../assets/commands.txt"
+        file = "assets/commands.txt"
         show_section(file)
         check = check_back()
 
@@ -66,17 +66,17 @@ while check:
 
         section = str(input("Choose section:\n"))
         if section == "1":
-            file = "../assets/Linux_how_to_install_files_Short.txt"
+            file = "assets/Linux_how_to_install_files_Short.txt"
             print_file(file)
             check = check_back()
 
         elif section == "2":
-            file = "../assets/Linux_how_to_install_files Deb_long.txt"
+            file = "assets/Linux_how_to_install_files Deb_long.txt"
             print_file(file)
             check = check_back()
 
         elif section == "3":
-            file = "../assets/Linux_how_to_install_files TAR_GZ_long.txt"
+            file = "assets/Linux_how_to_install_files TAR_GZ_long.txt"
             print_file(file)
             check = check_back()
 
@@ -87,16 +87,16 @@ while check:
         git_section = str(input("Choose section:\n"))
 
         if git_section == "1":
-            file = "../assets/Git_install.txt"
+            file = "assets/Git_install.txt"
             print_file(file)
             check = check_back()
 
         elif git_section == "2":
-            file = "../assets/Git_commnads.txt"
+            file = "assets/Git_commnads.txt"
             show_section(file)
             check = check_back()
 
         elif git_section == "3":
-            file = "../assets/Git_files_state.txt"
+            file = "assets/Git_files_state.txt"
             print_file(file)
             check = check_back()
