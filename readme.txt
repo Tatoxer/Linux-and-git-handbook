@@ -1,1 +1,1 @@
-Это краткий список команд по Linux и Gut/GitHub
+#Краткий handbook по Linux и Git
