@@ -1,1 +1,1 @@
-#Краткий handbook по Linux и Git
+### Краткий handbook по Linux и Git
