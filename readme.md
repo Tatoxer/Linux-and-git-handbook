@@ -1,3 +1,5 @@
-###1 Краткий handbook по Linux и Git
+### Краткий handbook по Linux и Git
 
-`cd /path/to/git_folder/`
+#### Установка
+
+`cd /path_to_git_folder/`
