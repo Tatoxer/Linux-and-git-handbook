@@ -48,16 +48,39 @@ def check_back():
 check = True
 while check:
     print("""1.Linux commands
-2.Git""")
+2.Linux helper
+3.Git""")
     section = str(input("Choose section:\n"))
 
     if section == "1":
         file = "../assets/commands.txt"
-        r = "r"
         show_section(file)
         check = check_back()
 
     elif section == "2":
+        print("""\n
+1.How to install files on linux (just commands)
+2.How to install Deb files (with description)
+3.How to install TAR.GZ files (with description)
+\n""")
+
+        section = str(input("Choose section:\n"))
+        if section == "1":
+            file = "../assets/Linux_how_to_install_files_Short.txt"
+            print_file(file)
+            check = check_back()
+
+        elif section == "2":
+            file = "../assets/Linux_how_to_install_files Deb_long.txt"
+            print_file(file)
+            check = check_back()
+
+        elif section == "3":
+            file = "../assets/Linux_how_to_install_files TAR_GZ_long.txt"
+            print_file(file)
+            check = check_back()
+
+    elif section == "3":
         print("\n" + """1.Git install
 2.Git commands
 3.Git files state""" + "\n"*2)
