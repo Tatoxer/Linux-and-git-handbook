@@ -62,6 +62,7 @@ while check:
 1.How to install files on linux (just commands)
 2.How to install Deb files (with description)
 3.How to install TAR.GZ files (with description)
+4.Virtual enviroment
 \n""")
 
         section = str(input("Choose section:\n"))
@@ -77,6 +78,11 @@ while check:
 
         elif section == "3":
             file = "assets/Linux_how_to_install_files TAR_GZ_long.txt"
+            print_file(file)
+            check = check_back()
+
+        elif section == "4":
+            file = "assets/Venv.txt"
             print_file(file)
             check = check_back()
 
